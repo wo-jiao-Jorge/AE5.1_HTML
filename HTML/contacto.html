@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Jorge Joaquin Rodriguez Luis 1 DAM B-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="inicio">La web de las artes</h1>
+    <h2>SECCIÓN: Contáctanos</h2>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../HTML/musica.html">Música</a></li>
+        <li><a href="../HTML/cine.html">Cine</a></li>
+        <li><a href="../HTML/generosLiterarios.html">Géneros Literarios</a></li>
+        <li><a href="../HTML/multimedia.html">Multimedia</a></li>
+        <li><a href="/HTML/contacto.html">Contáctanos</a></li>
+    </ul>
+    <hr>
+    <div>
+        <form name="Datos Personales" method="post" action="/send.php">
+            <fieldset>
+                <legend>Datos Personales </legend>
+                <div>
+                    Nombre:
+                    <input type="text" name="Nombre" autocomplete="off" placeholder="Introduce tu nombre..."
+                        pattern="[A-Za-z]*" required />
+                </div>
+                <div>
+                    Apellidos:
+                    <input type="text" name="Apellidos" autocomplete="off" placeholder="Introduce tu apellido..."
+                        pattern="[A-Za-z]*" required />
+                </div>
+                <div>
+                    Email:
+                    <input type="email" name="correo" autocomplete="off" placeholder="usuario@gmail.com" required />
+                </div>
+                <div>
+                    Fecha de Nacimiento:
+                    <input type="date" name="Fecha" autocomplete="off" placeholder="dd/mm/aaaa" />
+                </div>
+                <div>
+                    Edad:
+                    <input type="number" name="edad" autocomplete="off" max="100" required />
+                </div>
+                <div>
+                    Sexo:
+                    <input type="radio" name="Sexo" value="Hombre" />Hombre
+                    <input type="radio" name="Sexo" value="Mujer" />Mujer
+                </div>
+                <div>
+                    País:
+                    <select name="pais" id="pa">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="España"> España </option>
+                        <option value="Francia"> Francia </option>
+                        <option value="Portugal"> Portugal </option>
+                        <option value="Italia"> Italia </option>
+                    </select>
+                </div>
+            </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend> Otros Datos</legend>
+            <div>
+                <label for="Mensaje">Mensaje: <textarea id="mensaje" cols="50" rows="10"></textarea></label>
+            </div>
+            <div>
+                Adjunta una foto...<input type="file" name="adjunto" accept=".png,.jpg" multiple />
+            </div>
+    </div>
+    <div>
+        <input type="checkbox" name="condicion" id="si" />He leído las condiciones...
+    </div>
+    <input type="reset" value="Limpiar" />
+    <input type="submit" value="Enviar" />
+    </form>
+    </fieldset>
+    <div>
+        <h2>Centro de Referencia</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7794477103666!2d-16.2832455!3d28.4560642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708096380152!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <hr>
+    <a href="#inicio">Inicio</a>
+</body>
+
+</html>
